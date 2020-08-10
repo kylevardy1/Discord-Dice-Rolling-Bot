@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Dice Rolling Bot" />
+        <module name="DiceRollingBot" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Dice Rolling Bot" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,5 +1,6 @@
 package ca.INotAlive.DiceRollingBot;
 
+import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.MessageChannel;
 import net.dv8tion.jda.api.events.guild.GenericGuildEvent;
@@ -12,8 +13,12 @@ public class Roll extends ListenerAdapter {
         String m = e.getMessage().getContentRaw();
         MessageChannel gc = e.getMessage().getChannel();
         Guild g = e.getGuild();
+        EmbedBuilder eb = new EmbedBuilder();
+        eb.setTitle("DRB Help Menu");
+        eb.setDescription("r!4\nr!6\nr!8\nr!10\nr!100\nr!12\nr!20");
         if (m.equalsIgnoreCase("r!help")){
-            gc.sendMessage("Help Menu\n\nr!4\nr!6\nr!8\nr!10\nr!100\nr!12\nr!20").queue();
+            gc.sendMessage(eb.build()).queue();
+        //    gc.sendMessage("Help Menu\n\nr!4\nr!6\nr!8\nr!10\nr!100\nr!12\nr!20").queue();
         }else if (m.equalsIgnoreCase("r!4")) {
             int d4 = (int) (Math.random() * ((4 - 1) + 1) + 1);
             String d4s = String.valueOf(d4);
