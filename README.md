@@ -6,6 +6,8 @@ https://github.com/DV8FromTheWorld/JDA
 # What does it do?
 It rolls dice in your discord server.  
 
+#Can I Host It My Self?
+Yes of course. Download the jar file from releases and put your bot token in a file named token.txt then run the jar file and the bot should start up.   
 # What are the commands?
 r!help  
 r!4  
