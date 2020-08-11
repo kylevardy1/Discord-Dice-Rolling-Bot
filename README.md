@@ -16,4 +16,5 @@ r!8
 r!10  
 r!100  
 r!12  
-r!20
+r!20  
+Or you can use any of theses with the amount you want to roll it I.E. (r!6 6) to roll 6d6
